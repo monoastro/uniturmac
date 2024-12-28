@@ -1,0 +1,27 @@
+\documentclass[a4paper, 12pt]{report}
+\input{definitions}
+\begin{document}
+
+% Preamble
+\input{preamble/cover.tex}
+\pagenumbering{roman}
+\include{preamble/acknowledgement}
+\include{preamble/abstract}
+\include{preamble/tableOfContents}
+\include{preamble/listOfTables}
+\include{preamble/listOfFigures}
+\include{preamble/tableOfAcronyms}
+
+% Content
+\pagenumbering{arabic}
+\include{content/introduction}
+\include{content/literatureReview}
+\include{content/methodology}
+\include{content/expectedResult}
+\include{content/feasibilityAnalysis}
+\include{content/appendices}
+
+% Bibliography
+\bibliographystyle{plain}
+\bibliography{bibliography}
+\end{document}

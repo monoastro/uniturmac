@@ -1,0 +1,114 @@
+% =========================================
+%               PACKAGES
+% =========================================
+\usepackage{graphicx}
+\usepackage[justification=centering]{caption} % All captions will be centered. 
+\usepackage{url} % To include in URL in reference. 
+\usepackage[nottoc]{tocbibind} %Includes "References" in the table of contents
+\usepackage{tocloft} % To change formatting of main list. 
+\usepackage[a4paper, left=1.5in, right=1in, top=1in, bottom=1in]{geometry}
+\usepackage{parskip}
+\usepackage{listings}
+\usepackage{xcolor} % syntax highlighting in codes
+\usepackage{xspace} % for solving spacing issues on macros/commands
+\usepackage{booktabs} % for table rules
+\usepackage{amsmath}
+
+%\usepackage{hyperref}
+% \usepackage[]{times}
+\usepackage{times} % for Times New Roman font
+\usepackage{cite} % for Times New Roman font
+\usepackage{caption} % for caption management
+\usepackage{setspace} % for line spacing
+\usepackage{graphicx} % for figures
+\usepackage{datetime2} % for date management
+\usepackage{titlesec} % for overriding the default heading styles
+\usepackage{textcase} % for managing text-cases Title Case, Sentence case, UPPERCASE ,etc.
+\usepackage[expansion=false]{microtype} % for micro-typography
+\usepackage[]{parskip} % for paragraph no indentation
+\usepackage{sectsty} % overriding default section styles
+\usepackage{setspace} % for line spacing
+\usepackage[numbers]{natbib} % for bibliograph
+\usepackage[none]{hyphenat}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+% \usepackage{svg} % for svg images
+% \usepackage{wrapfig} % for wrapping text around figures
+% \usepackage{lscape} % for landscape pages
+% \usepackage{rotating}	% for rotating the page
+% \usepackage{epstopdf} % for eps images
+\sloppy % for solving overfull hbox
+
+% =========================================
+%               MACROS
+% =========================================
+\newcommand\cUniversity{Tribhuvan University}
+\newcommand\cDepartment{Institute of Engineering}
+\newcommand\cCampus{Thapathali Campus}
+\newcommand\cTitle{An Implementation of A Universal Turing Machine}
+\newcommand\cSubmittedI{Agrima Regmi}
+\newcommand\cSubmittedIRoll{(THA078BEI003)}
+\newcommand\cSubmittedII{Jenish Pant}
+\newcommand\cSubmittedIIRoll{(THA078BEI018)}
+\newcommand\cSubmittedIII{Pratistha Saptoka}
+\newcommand\cSubmittedIIIRoll{(THA078BEI028)}
+\newcommand\cSubmittedIV{Sanskriti Khatiwada}
+\newcommand\cSubmittedIVRoll{(THA078BEI037)}
+\newcommand\cSupervisor{ Er. Binod Sapkota }
+\newcommand\cCoordinator{ Er. Sudip Rana }
+\newcommand\cHOD{ Umesh Kanta Ghimire }
+
+
+% date setting
+\newcommand\cDate{December, 2024}
+
+%  user defined macros
+\newcommand{\mlistDesc}[2]{\textbf{#1} #2}
+
+
+% =========================================
+%               CONFIGS
+% =========================================
+\onehalfspacing % global line spacing settings
+\title{\cTitle}
+\date{\today}
+\author{Jenish Pant, Agrima Regmi, Pratistha Sapkota, Sanskriti Khatiwada}
+%for code formatting configs
+\lstset{language=C++,
+	basicstyle=\ttfamily\small,
+	keywordstyle=\color{blue},
+	commentstyle=\color{green},
+	stringstyle=\color{red},
+	showstringspaces=false,
+	breaklines=true,
+	numbers=left,
+	numberstyle=\tiny,
+	frame=single,
+	captionpos=b}
+
+% \chapterfont{\fontsize{12}{15}\bfseries\MakeUppercase}
+\sectionfont{\fontsize{12}{15}\bfseries}
+\subsectionfont{\fontsize{12}{15}\bfseries}
+\subsubsectionfont{\fontsize{12}{15}\bfseries}
+
+% =========================================
+%           OVERWRITTEN SETTINGS
+% =========================================
+
+
+\makeatletter
+\renewcommand{\@chapapp}{}
+\makeatother
+\titleformat{\chapter}[hang]{\fontsize{12}{15}\bfseries \MakeUppercase }{\thechapter. }{0pt}{}
+\titlespacing*{\chapter}{0pt}{0pt}{12pt}
+
+% To fix table position using ht. package: float
+% bibliography
+% \usepackage[backend=biber,style=ieee]{biblatex}
+% \addbibresource{references.bib}

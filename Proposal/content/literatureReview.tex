@@ -1,0 +1,32 @@
+\chapter{Literature Review}
+
+\section{Theory}
+
+The concept of the Turing Machine was introduced by Alan Turing in his seminal paper, \textit{On Computable Numbers, with an Application to the Entscheidungsproblem.\cite{turing1936}} This work laid the foundation for computation theory, or computability, which examines the capabilities and limitations of digital computers.  
+
+A Turing Machine is a mathematical model of computation that manipulates symbols on a tape according to a predefined set of rules. Initially referred to as an "a-machine" (automatic machine) by Turing, the term "Turing Machine" was popularized by Alonzo Church in a review of Turing's work \cite{church1937}. The Turing Machine model is fundamental to computer science, as it defines the theoretical framework for understanding computability and algorithmic processes.  
+
+The operation of a Turing Machine is determined by a finite state machine (FSM) that processes input in binary form from the tape and produces an output based on the machine's halting state. However, each Turing Machine is tailored to a specific computation, necessitating the construction of a new machine for every unique task. To overcome this limitation, Turing proposed the Universal Turing Machine (UTM), which can simulate any other Turing Machine by accepting the description of the machine alongside the input on the tape \cite{turing1936}. This innovation is regarded as a precursor to modern programmable computers.  
+
+\section{Similar Projects}
+
+\subsection{Early Models of Turing Machines}
+
+In the 1950s, efforts to translate Turing's abstract concepts into practical implementations gained traction. Claude Shannon made significant contributions through his work on finite-state machines (FSM), presented in the book *Automata Studies* (1956), co-edited by Shannon and John McCarthy. While Shannon's focus was primarily on theoretical frameworks, his research laid the foundation for designing hardware-based computational models, including Turing Machines \cite{shannon1956}. These insights were pivotal in bridging the gap between abstract automata and their physical implementations.  
+
+\subsection{Turing Machine Simulators}
+
+Numerous software tools have been developed to simulate Turing Machines, facilitating the study of theoretical computer science. A notable example is JFLAP (Java Formal Languages and Automata Package), created by Sharon H. Rodger in the 1990s. JFLAP enables users to experiment with topics such as finite automata, pushdown automata, multi-tape Turing Machines, and various types of grammars \cite{rodger1990s}. This tool has been widely used in academia for teaching and research, providing valuable insights into the operation and universality of Turing Machines.  
+
+To gain a deeper understanding of the practical challenges associated with this project, we developed our own emulator. This approach allowed us to explore the feasibility of implementing a Universal Turing Machine in hardware.  
+
+\subsection{Physical Models of Turing Machines}
+
+Physical models of Turing Machines have been constructed by researchers and enthusiasts to demonstrate Turing's concepts in tangible ways. These models typically involve mechanical components to replicate the tape movement, state transitions, and symbol manipulation processes. For instance, Mike Davey’s model is a noteworthy example that brings Turing's abstract ideas into a physical form for educational purposes \cite{davey2010}. However, these implementations are often constrained by material and design limitations, restricting their ability to handle complex computations.  
+
+\subsection{Advances in Turing Machine Simulations}
+
+With advancements in computational complexity theory and algorithm development, Turing Machine simulators have evolved to support diverse applications in fields such as quantum computing, artificial intelligence, and cryptography.  
+
+The Quantum Turing Machine (QTM), introduced by David Deutsch and later expanded upon by Bernstein and Vazirani, represents a significant breakthrough. QTMs extend the traditional UTM model by incorporating quantum mechanical principles, such as superposition and entanglement, while ensuring unitary evolution \cite{deutsch1985, bernstein1993}. These machines exemplify the fusion of classical computation theory with quantum mechanics, paving the way for revolutionary developments in computational research.  
+

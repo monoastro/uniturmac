@@ -1,0 +1,18 @@
+
+
+% \addtocontents{lof}{\protect\noaddvspace}
+
+\phantomsection % Ensure correct hyperlinking
+
+{
+    \renewcommand{\thispagestyle}[1]{}
+    \setlength{\cftbeforeloftitleskip}{0pt} % Reduce space befor
+    \setlength{\cftafterloftitleskip}{0pt} % Add space after
+    \renewcommand{\cftloftitlefont}{\normalsize\bfseries} % Title font size and style
+
+    \renewcommand{\listfigurename}{LIST OF FIGURES} % Rename List of Tables
+
+
+
+    \listoffigures
+}

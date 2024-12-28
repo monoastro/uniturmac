@@ -1,0 +1,17 @@
+\clearpage
+\renewcommand{\cftchappresnum}{} % Remove the word "Chapter"
+\renewcommand\cftchapaftersnum{.} % Use a dot after the chapter number
+\renewcommand\cftchapnumwidth{1.5em} % Adjust the width of the chapter number
+\renewcommand{\cftchapdotsep}{\cftdotsep} % Use default dot separation
+\let\mtcontentsname\contentsname
+\renewcommand\contentsname{\normalsize TABLE OF CONTENTS \hfill\null{}}
+\pagestyle{empty}
+{
+    \renewcommand{\thispagestyle}[1]{}
+    \setlength{\cftbeforetoctitleskip}{0pt} % Reduce space before TOC title
+    \setlength{\cftaftertoctitleskip}{0pt} % Add space after TOC title
+    \tableofcontents
+    \renewcommand{\baselinestretch}{1.0}\normalsize
+}
+\clearpage
+\pagestyle{plain}

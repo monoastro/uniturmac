@@ -1,0 +1,19 @@
+\clearpage
+
+\begingroup
+\phantomsection % Ensure correct hyperlinking
+
+{
+    \singlespacing
+    \renewcommand{\thispagestyle}[1]{}
+    \setlength{\cftbeforelottitleskip}{0pt} % Reduce space befor
+    \setlength{\cftafterlottitleskip}{0pt} % Add space after
+    \renewcommand{\cftlottitlefont}{\normalsize\bfseries} % Title font size and style
+
+    \renewcommand{\listtablename}{LIST OF TABLES} % Rename List of Tables
+
+    \renewcommand{\cfttabpresnum}{Table~} % Prefix "Table" before table numbers
+    \setlength{\cfttabnumwidth}{4em} % Adjust width to prevent overlap
+
+    \listoftables
+} 
